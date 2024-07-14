@@ -17,13 +17,12 @@ addIngredient("finished_apple",{ //ID should be lowercase with underscores
 });
 
 // Add ingredient with reactions
-addIngredient("water",{
-    type:"liquid",
-    color:"#bfd8df",
-    reactions: {
-        meat: { set1:"broth" },
-        vegetable: { set1:"broth", tempMin:60 }
-    }
+addIngredient("coal_tar",{
+    type:"paste",
+    color:"#2b2929",
+    boilPoint:150,
+    boilInto:["ethylbenzene"]
+    
 });
 
 // Change attributes of existing ingredients
